@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "youtube-yoyo",
+  "version": "1.0",
+  "description": "go back and forth between youtube containing timestamp comments and video.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/*"
+      ],
+      "js": [
+        "inject.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "content.js"
+  ]
+}
